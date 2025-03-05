@@ -8,7 +8,7 @@ instructions.prototype = {
 	},
 	
 	preload : function() {
-		this.load.image('continueB', './images/main/continue.png');
+		this.load.image('continueB', './assets/images/main/continue.png');
     },
 
     create: function() {

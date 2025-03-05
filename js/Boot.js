@@ -14,6 +14,7 @@ boot.prototype = {
 	create: function() {
 		this.game.scale.pageAlignHorizontally = true;
 		this.game.scale.pageAlignVeritcally = true;
+		this.game.scale.refresh();
 
 		this.game.state.start('home');
 	},

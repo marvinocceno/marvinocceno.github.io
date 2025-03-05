@@ -2,8 +2,8 @@ menu = function(game){}
 
 menu.prototype = {
 	preload : function() {
-		this.load.image('magt1', './images/main/magt1.png');
-		this.load.image('magt2', './images/main/magt2.png');
+		this.load.image('magt1', './assets/images/main/magt1.png');
+		this.load.image('magt2', './assets/images/main/magt2.png');
     },
 
     create: function() {

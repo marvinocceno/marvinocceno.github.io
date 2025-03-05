@@ -10,12 +10,12 @@ daniel.prototype = {
 	},
 	
 	preload: function() {
-		this.load.image('yellowButton', './images/main/yellow.png');
-		this.load.image('whiteButton', './images/main/white.png');
-        this.load.image('noButton', './images/main/no.png');
-		this.load.image('dan', './images/main/dan.png');
-		this.load.image('tryButton', './images/main/try.png');
-		this.load.image('exitButton', './images/main/exit.png');
+		this.load.image('yellowButton', './assets/images/main/yellow.png');
+		this.load.image('whiteButton', './assets/images/main/white.png');
+        this.load.image('noButton', './assets/images/main/no.png');
+		this.load.image('dan', './assets/images/main/dan.png');
+		this.load.image('tryButton', './assets/images/main/try.png');
+		this.load.image('exitButton', './assets/images/main/exit.png');
     },
 
     create: function() {

@@ -2,8 +2,8 @@ home = function(game){}
 
 home.prototype = {
 	preload : function() {
-		this.load.image('title', './images/home/title.png');
-		this.load.image('startB', './images/home/start.png');
+		this.load.image('title', './assets/images/home/title.png');
+		this.load.image('startB', './assets/images/home/start.png');
     },
 
     create: function() {

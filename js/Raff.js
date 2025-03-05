@@ -9,11 +9,11 @@ raff.prototype = {
 	},
 	
 	preload: function() {
-		this.load.image('yesButton', './images/main/yes.png');
-        this.load.image('noButton', './images/main/no.png');
-		this.load.image('raf', './images/main/raf.png');
-		this.load.image('tryButton', './images/main/try.png');
-		this.load.image('exitButton', './images/main/exit.png');
+		this.load.image('yesButton', './assets/images/main/yes.png');
+        this.load.image('noButton', './assets/images/main/no.png');
+		this.load.image('raf', './assets/images/main/raf.png');
+		this.load.image('tryButton', './assets/images/main/try.png');
+		this.load.image('exitButton', './assets/images/main/exit.png');
     },
 
     create: function() {
