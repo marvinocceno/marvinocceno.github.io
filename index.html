@@ -1,18 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Mathemagic 101</title>
-	<link rel="icon" type="image/png" href="./images/home/icon.png" />
-
-	<script src="./phaser/phaser.min.js"></script>
-	<script src="./js/Boot.js"></script>
-	<script src="./js/Home.js"></script>
-	<script src="./js/Menu.js"></script>
-	<script src="./js/Instructions.js"></script>
-	<script src="./js/Raff.js"></script>
-	<script src="./js/Daniel.js"></script>
-	<script src="./js/Game.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #607d8b, #455a64);
+            text-align: center;
+            color: white;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            align-items: center;
+            padding: 15px 50px; /* Increased right padding to create space */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 80px; /* Added space at the top right corner */
+            display: flex;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ff5e78;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1px;
+            padding-right: 25px;
+        }
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 50px;
+        }
+        #home {
+            font-size: 1.7em;
+        }
+        #about {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        #projects {
+            background: rgba(255, 255, 255, 0.25);
+        }
+        #games {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        img {
+            width: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+        h1, h2 {
+            margin: 10px 0;
+        }
+        .project-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .project {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            min-height: 200px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body></body>
+<body>
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#games">Games</a>
+        </div>
+    </div>
+    
+    <section id="home">
+        <h1>Hi! I'm Marvin</h1>
+        <p>Machine Learning Engineer  |  Data Scientist  |  Software Engineer</p>
+    </section>
+
+    <section id="about">
+        <img src="profile.jpg" alt="Profile Picture">
+        <h1>About Me</h1>
+        <p>5+ years of work experience in leveraging machine learning, data science, and data engineering solutions, and 3+ years of work experience in developing full-stack applications. Demonstrates expertise in computer vision, mathematics, statistics, and computer science. Passionate about solving complex real-world problems with AI/ML. Possesses excellent leadership, collaboration, and communication skills. Awarded with a data science master’s degree scholarship in the US. </p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <a href="./index_bts.html" class="project">Multimodal Brain Tumor Segmentation</a>
+            <div class="project">Protein Phenotype Comention</div>
+            <div class="project">Voterify</div>
+        </div>
+    </section>
+    
+    <section id="games">
+        <h2>Games</h2>
+        <p>Game development was once a hobby of mine. Good times!</p>
+        <div class="project-container">
+            <a href="./index_game.html" class="project">Mathemagic</a>
+            <a href="#" class="project">Project 1</a>
+        </div>
+    </section>
+</body>
 </html>
